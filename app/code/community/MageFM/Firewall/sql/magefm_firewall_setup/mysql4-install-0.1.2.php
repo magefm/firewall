@@ -20,4 +20,14 @@ $table = $this->getConnection()
 
 $this->getConnection()->createTable($table);
 
+$this->getConnection()->addColumn(
+    $this->getTable('customer/entity'),
+    'remote_ip',
+    array(
+        'type' => Varien_Db_Ddl_Table::TYPE_TEXT,
+        'nullable' => true,
+        'comment' => 'Create from IP address'
+    )
+);
+
 $this->endSetup();
