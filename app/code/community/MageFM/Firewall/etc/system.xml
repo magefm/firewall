@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <sections>
+        <sales>
+            <groups>
+                <magefm_firewall translate="label">
+                    <label><![CDATA[MageFM Firewall]]></label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1001</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <order_count translate="label comment">
+                            <label><![CDATA[Order count]]></label>
+                            <comment><![CDATA[Number of orders that have to be placed in X minutes to block the customer's IP address. X minutes is configured in the field "Time span" below.]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </order_count>
+                        <time_span translate="label comment">
+                            <label><![CDATA[Time span]]></label>
+                            <comment><![CDATA[In minutes. Number of minutes in the past to look for the amount of order placed and decide whether block the customer's IP or not.<br />]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </time_span>
+                    </fields>
+                </magefm_firewall>
+            </groups>
+        </sales>
+    </sections>
+</config>
